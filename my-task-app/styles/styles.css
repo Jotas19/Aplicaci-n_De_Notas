@@ -1,0 +1,238 @@
+/*Global*/
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Establecer la fuente para toda la aplicación */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Puedes establecer un color de fondo si lo deseas */
+}
+
+/* Estilo adicional para los encabezados y otros elementos */
+h2, h3 {
+  font-family: 'Roboto', sans-serif; /* Asegurando que los encabezados también usen la misma fuente */
+}
+
+/* Otros estilos de tu aplicación */
+.container {
+  padding: 20px;
+}
+.taskCard {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+.errorMessage {
+  color: red;
+}
+
+
+
+/* Estilos para Auth */
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .authHeading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .authFormGroup {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .authInput {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .authButtonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .authButton {
+    flex: 1;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #0070f3;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f6f8;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .taskCard {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    animation: scale-in-center 0.5s cubic-bezier(.25, .46, .45, .94) both; /* Animación al añadir tarea */
+  }
+  
+  .taskTitle {
+    font-size: 1.25rem;
+    color: #0070f3;
+    margin: 0;
+  }
+  
+  .taskDescription {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  .taskCompleted {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .deleteButton {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .formContainer {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .createButton {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Animaciones */
+  .scale-out-center {
+    animation: scale-out-center 0.5s cubic-bezier(.55, .085, .68, .53) both;
+  }
+  
+  @keyframes scale-out-center {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .errorMessage {
+    color: red; /* Color rojo para indicar un error */
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  .editButton {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #0070f3; /* Puedes cambiar el color */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .taskDueDate, .taskStatus {
+    font-weight: bold;
+  }
+  
