@@ -25,45 +25,59 @@ Asegúrate de tener instaladas las siguientes herramientas en tu sistema:
 
 Si aún no has clonado el proyecto, ejecuta el siguiente comando en tu terminal:
 
+# Guía de Instalación de la Aplicación de Notas
+
+## 1. Clonar el Repositorio
+Ejecuta el siguiente comando para clonar el repositorio:
 
 git clone https://github.com/Jotas19/Aplicaci-n-de-Notas.git
-2. Instalación de Dependencias
-a. Back-End
+
+## 2. Instalación de Dependencias
+
+### a. Back-End
 Navega al directorio del proyecto del back-end:
 
-
 cd Aplicación de Notas/back-end
+
 Instala las dependencias necesarias:
 
 npm install
-b. Front-End
+
+### b. Front-End
 Navega al directorio del proyecto del front-end:
 
 cd ../front-end
+
 Instala las dependencias necesarias:
 
 npm install
-3. Ejecución de los Proyectos
-a. Iniciar el Back-End
+
+## 3. Ejecución de los Proyectos
+
+### a. Iniciar el Back-End
 Navega de nuevo al directorio del back-end:
 
 cd ../back-end
+
 Inicia el servidor back-end ejecutando el siguiente comando:
 
 npm run start
+
 Esto iniciará el servidor en el puerto 3000.
 
-b. Iniciar el Front-End
+### b. Iniciar el Front-End
 Navega al directorio del front-end:
 
 cd ../front-end
+
 Inicia el servidor front-end ejecutando el siguiente comando:
 
 npm run start
+
 Esto iniciará la aplicación en el puerto 3001.
 
-4. Acceso a la Aplicación
+## 4. Acceso a la Aplicación
 Una vez que ambos servidores estén en ejecución, puedes acceder a la aplicación en tu navegador:
 
-Back-End: http://localhost:3000
-Front-End: http://localhost:3001
+- **Back-End:** [http://localhost:3000](http://localhost:3000)
+- **Front-End:** [http://localhost:3001](http://localhost:3001)
