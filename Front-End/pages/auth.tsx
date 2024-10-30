@@ -12,7 +12,7 @@ export default function Auth() {
     try {
       await axiosClient.post('/auth/register', { username, password });
       alert('Usuario registrado con éxito');
-    } catch (error) {
+    } catch {
       alert('Error en el registro');
     }
   };
@@ -22,7 +22,7 @@ export default function Auth() {
       const response = await axiosClient.post('/auth/login', { username, password });
       localStorage.setItem('token', response.data.access_token);
       router.push('/tasks');
-    } catch (error) {
+    } catch  {
       alert('Error en el inicio de sesión');
     }
   };
